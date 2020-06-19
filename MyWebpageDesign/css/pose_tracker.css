@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+.pose_tracker{
+    padding: 0 100px 0 100px;
+}
+
+
+/* title */
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+body{
+    background-color: #252627;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navbar{
+    background-color: #181818;
+}
+
+header h1,
+header a,
+.text p,
+.Home h1,
+.Demo h1,
+.Instructions h1,
+.Pose_Tracker h1,
+.Pose_Evaluation h1{
+    color: #8f8e8e;
+    font-family: 'Metal Mania', cursive;
+}
+
+header h1{
+    color: #950740;
+    font-family: 'Metal Mania', cursive;
+}
+
+li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* main page */
+.main-infomation{
+    height: calc(100vh - 81.6px);
+}
+
+.text{
+    margin-top: 150px;
+}
+
+
+.text span {
+    display: inline-block;
+}
+
+
+span.line1 {
+    margin-left: -6px;
+    font-size: 5rem;
+    cursor: context-menu;
+    color: #c3073F;
+    font-family: 'Metal Mania', cursive;
+}
+
+span.line1:hover{
+    color: #48cfad;
+    transition: all .5s;
+}
+span.line5{
+    font-size: 3rem;
+    color: #252627;
+}
+
+
+.text button{
+    padding: 12px 25px;
+    background-color: #252627;
+    border: 3px solid #ed5565;
+    color: #ed5565;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    position: relative;
+    top: 60px;
+    overflow: hidden; 
+    transition: .5s;
+    display: inline-block;
+    font-family: 'Metal Mania', cursive;
+}
+
+.text button:hover{
+    color: #48cfad;
+}
+
+/* .webcamvideo{
+    position: relative;
+    top: 0%;
+    left: 50%;
+    width: 640px;
+    height: 480px;
+    border: 10px #ffffff solid;
+}
+
+.videoElement{
+    position: relative;
+    top: 0%;
+    left: -35%;
+    width: 640px;
+    height: 480px;
+    background-color: blue;
+} */
+
+
+/* Demo page */
+.Demo{
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.Demo h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .3;
+}
+
+.Demo video{
+    position: relative;
+    width: 1500px;
+    padding-left: 300px;
+
+}
+
+
+
+/* Instructions page */
+.Instructions{
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.Instructions h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .3;
+}
+
+.image123{  
+    width:1800px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+
+/* footer */
+/* footer hr{
+    border: 2px solid #707070;
+    margin-top: 80px;
+}
+
+footer p{
+    text-align: center;
+    columns: #707070;
+    font-size: 1.2rem;
+    padding: 30px 0;
+} */

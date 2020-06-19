@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pose_evaluation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <title>Pose Evaluation</title>
+</head>
+<body>
+<!-- title bar -->
+    <div class="pose_evaluation navbar">
+        <header>
+            <div class="logo">
+                <h1>Pose Tracker</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="pose_tracker.html">Pose Tracker</a></li>
+                    <li><a href="#pose_evaluation">Pose Evaluation</a></li>
+                    <li><a href="#Demo">Demo</a></li>
+                    <li><a href="#Instructions">Instructions</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+<!-- main page -->
+<div class="pose_evaluation main-infomation" id="pose_evaluation">
+    <div class="text">
+        <h1>
+            <span class="line1">S</span>
+            <span class="line1">e</span>
+            <span class="line1">l</span>
+            <span class="line1">e</span>
+            <span class="line1">c</span>
+            <span class="line1">t</span>
+            <span class="line5">.</span>
+            <span class="line1">P</span>
+            <span class="line1">o</span>
+            <span class="line1">s</span>
+            <span class="line1">e</span>
+        </h1>
+        <!-- <button class="ESP32CAM">Deep Squat</button> -->
+        <br>
+        <button class="jumping_jack" id="jumping_jack">Jumping Jack</button>
+        <button class="openclose" id="openclose">pose</button>
+    </div>
+    <script src="java/jumpingjack.js"></script>
+</div>
+
+
+<!-- demo page -->
+<div class="pose_evaluation Demo" id="Demo">
+    <h1>Demo</h1>
+    <video controls>
+        <source  src="demo2.mp4" type="video/mp4"> 
+    </video>
+</div>
+
+
+<!-- Instruction page -->
+<div class="pose_evaluation Instructions" id="Instructions">
+    <h1>Instructions</h1>
+    <img src="img/introduction_evaluation.png" alt="" class="image123">
+</div>
+
+
+<footer>
+    <hr>
+    <p>2020 Copyright. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    
+<!-- title bar -->
+    <div class="main navbar">
+        <header>
+            <div class="logo">
+                <h1>Pose Tracker</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Overview">Overview</a></li>
+                    <li><a href="#Components">Components</a></li>
+                    <li><a href="pose_tracker.html">Pose Tracker</a></li>
+                    <li><a href="pose_evaluation.html">Pose Evaluation</a></li>
+                    <li><a href="#Contact_Me">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+<!-- main page -->
+    <div class="main main-infomation" id="Home">
+        <div class="text">
+            <h1>
+                <span class="line1">P</span>
+                <span class="line1">o</span>
+                <span class="line1">s</span>
+                <span class="line1">e</span>
+                <span class="line5">.</span>
+                <span class="line1">T</span>
+                <span class="line1">r</span>
+                <span class="line1">a</span>
+                <span class="line1">c</span>
+                <span class="line1">k</span>
+                <span class="line1">e</span>
+                <span class="line1">r</span>
+            </h1>
+
+            <h2>
+                <span class="line2">Design by</span>
+                <span class="line6">..</span>
+                <span class="line3">J</span>
+                <span class="line3">i</span>
+                <span class="line3">a</span>
+                <span class="line3">b</span>
+                <span class="line3">i</span>
+                <span class="line3">n</span>
+                <span class="line3">L</span>
+                <span class="line3">i</span>
+                <span class="line3">u</span>
+            </h2>
+ 
+            <a href="#Contact_Me">contact me</a>
+        </div>
+
+
+        <div class="image-posetracker">
+            <img src="img/product_show.png" alt="" width="600px">
+        </div>
+    </div>
+
+
+    <!-- Overview page -->
+    <div class="main Overview" id="Overview" >
+        <h1>Overview</h1>
+        <div class="Overview_info">
+            <p> 
+                <!-- This is a project of Electronic System Design II.
+                <br>
+                I plan to design a rotating camera which could track a single human movement. We use ESP32 CAM to transmit the picture through Wi-Fi chip to laptop. The ESP32 CAM is a web server, and webpage is a client. When it connects, JavaScript use PoseNet algorithm in Tensorflow.js to track the keypoints of human body. The webpage gives the angle of servo motor back to ESP32.
+                <br>
+                This webpage contains two main functions. Pose tracker and Pose evaluation. Pose tracker is used to track the human face or human body. You could use it to take video by yourself, even turn your back to the camera. -->
+
+            </p>
+        </div>
+        <img src="img/flow_char_with_word.png" alt="" class="image_flow_chart">
+    </div>
+              
+    
+    <!-- Components page -->
+    <div class="main Components" id="Components">
+        <h1>Components</h1>
+        <div class="wrapper">
+            <div class="com">
+                <div class="EPS32CAM">
+                    <img src="img/EPS32CAM.png" alt="" class="img1">
+                    <div class="name">ESP32 Camera</div>
+                    <hl>
+                        <span class="lineCAM1">ESP32 is a feature-rich MCU</span>
+                        <br>
+                        <span class="lineCAM2">Intergrate Wi-Fi and Bluetooth</span>
+                        <br>
+                        <span class="lineCAM3"> OV2640 Camera Module</span>
+                    </hl>
+                    <p class="price"><sup>$</sup>5.99<sub>/each</sub></p>
+                    <button onclick="window.open('https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/')">Learn More</button>
+                </div>
+
+
+                <div class="servo">
+                    <img src="img/servo.png" alt="" class="img2">
+                    <div class="name">Mini Pan-Tilt Kit</div>
+                    <hl>
+                        <span class="lineCAM1">Tilt Up and Down 150 degree</span>
+                        <br>
+                        <span class="lineCAM2">Rotate 180 Degree Side to Side</span>
+                        <br>
+                        <span class="lineCAM3">Two Micro Servo motor</span>
+                    </hl>
+                    <p class="price"><sup>$</sup>18.95<sub>/each</sub></p>
+                    <button onclick="window.open('https://chicagodist.com/products/mini-pan-tilt-kit-assembled-with-micro-servos?variant=1021993596&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=Cj0KCQjww_f2BRC-ARIsAP3zarEadEjdSpf0ZFeA9XC5mcJN-pAREzGGLgWkjOpqQOszw20SumMtyq8aAqgOEALw_wcB')">Learn More</button>
+                </div>
+
+
+
+                <div class="HPE">
+                    <img src="img/FTDI.png" alt="" class="img3">
+                    <div class="name">FTDI</div>
+                    <hl>
+                        <span class="lineCAM1">RXD and TXD transveiver</span>
+                        <br>
+                        <span class="lineCAM2">Adjustable : 3.3V and 5.5V</span>
+                        <br>
+                        <span class="lineCAM3">Equipped with 500MA</span>
+                    </hl>
+                    <p class="price"><sup>$</sup>5.79<sub>/each</sub></p>
+                    <button onclick="window.open('https://www.amazon.com/dp/B07G2D34ZW/ref=dp_cerb_1')">Learn More</button>
+                </div>
+
+            </div>
+        </div>
+ 
+
+    </div>
+
+    <!-- contact me -->
+    <div class="main Contact_Me" id="Contact_Me">
+        <h1>Contact Me</h1>
+        <form>
+            <input type="text" name="name" placeholder="Full name">
+            <input type="email" placeholder="Email: personemail@example.com" disabled>
+            <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit">
+        </form>
+    </div>
+
+    <footer>
+        <hr>
+        <p>2020 Copyright. All rights reserved.</p>
+    </footer>
+
+
+
+
+</body>
+</html>

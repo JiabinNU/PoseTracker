@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pose_tracker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+ 
+
+    <title>Pose Tracker</title>
+</head>
+<body>
+
+<!-- title bar -->
+    <div class="pose_tracker navbar">
+        <header>
+            <div class="logo">
+                <h1>Pose Tracker</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="#Pose_tracker">Pose Tracker</a></li>
+                    <li><a href="pose_evaluation.html">Pose Evaluation</a></li>
+                    <li><a href="#Demo">Demo</a></li>
+                    <li><a href="#Instructions">Instructions</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+<!-- main page -->
+<div class="pose_tracker main-infomation" id="Pose Tracker">
+    <div class="text">
+        <h1>
+            <span class="line1">S</span>
+            <span class="line1">e</span>
+            <span class="line1">l</span>
+            <span class="line1">e</span>
+            <span class="line1">c</span>
+            <span class="line1">t</span>
+            <span class="line5">.</span>
+            <span class="line1">C</span>
+            <span class="line1">a</span>
+            <span class="line1">m</span>
+            <span class="line1">e</span>
+            <span class="line1">r</span>
+            <span class="line1">a</span>
+        </h1>
+        <button class="Laptop_webcam" id="Laptop_webcam">Laptop Webcam</button>
+        <button class="ESP32CAM" id="ESP32CAM">ESP32 CAM</button>
+        <!-- <button class="Whole_body" id="Whole_body">Whole Body</button> -->
+     
+    </div>
+
+    <!-- <div class="pose_tracker webcamvideo">
+        <video autoplay="true" class="videoElement"></video> 
+    </div> -->
+
+    <script src="java/pose_tracker_laptop.js"></script>
+    <script src="java/pose_tracker_ESP32CAM.js"></script>
+</div>
+
+
+
+
+
+<!-- demo page -->
+<div class="pose_tracker Demo" id="Demo">
+    <h1>Demo</h1>
+    <video controls>
+        <source  src="demo.mp4" type="video/mp4"> 
+    </video>
+</div>
+
+
+<!-- Instruction page -->
+<div class="pose_tracker Instructions" id="Instructions">
+    <h1>Instructions</h1>
+    <img src="img/introduction_tracker.png" alt="" class="image123">
+</div>
+
+
+<!-- <footer>
+    <hr>
+    <p>2020 Copyright. All rights reserved.</p>
+</footer> -->
+
+</body>
+</html>

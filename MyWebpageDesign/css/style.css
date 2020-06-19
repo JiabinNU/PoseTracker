@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+.main{
+    padding: 0 100px 0 100px;
+}
+
+
+/* title */
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+body{
+    background-color: #252627;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navbar{
+    background-color: #181818;
+}
+
+header h1,
+header a,
+.text p,
+.Home h1,
+.Overview h1,
+.Components h1,
+.Pose_Tracker h1,
+.Pose_Evaluation h1,
+.Contact_Me{
+    color: #8f8e8e;
+    font-family: 'Metal Mania', cursive;
+}
+
+header h1{
+    color: #950740;
+    font-family: 'Metal Mania', cursive;
+}
+
+li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+
+.image-posetracker{
+    position: relative;
+    left: 100%;
+    top: -30%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* Home page */
+.main-infomation{
+    height: calc(100vh - 81.6px);
+}
+
+.text{
+    margin-top: 200px;
+}
+
+
+.text span {
+    display: inline-block;
+}
+
+
+span.line1 {
+    margin-left: -6px;
+    font-size: 5.5rem;
+    cursor: context-menu;
+    color: #c3073F;
+    font-family: 'Metal Mania', cursive;
+}
+
+span.line1:hover{
+    color: #48cfad;
+    transition: all .5s;
+}
+span.line5,
+span.line6{
+    font-size: 3rem;
+    color: #252627;
+}
+
+span.line2 {
+    margin-left: -8px;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    color: #8f8e8e;
+}
+span.line3 {
+    margin-left: -4px;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    color: #8f8e8e;
+}
+
+span.line3:hover{
+    color: #6d1468;
+    transition: all .5s;
+}
+
+.text a {
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid #ed5565;
+    color: #ed5565;
+    font-size: .8rem;
+    letter-spacing: 3px;
+    position: relative;
+    top: 60px;
+    overflow: hidden; 
+    transition: .5s;
+    display: inline-block;
+}
+
+.text a:hover{
+    color: #ffffff;
+}
+
+.text a::before{
+    content: '';
+    background-color: #ed5565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.text a:hover::before{
+    height: 100%;
+}
+
+
+/* Overview page */
+.Overview{
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.Overview h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .3;
+}
+/* .Overview_info{
+    font-size:1.5rem;
+    font-weight: 600;
+    margin: 10px;
+    color: #e7dfdd;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 1.5px;
+
+} */
+.image_flow_chart{  
+    width:1600px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/* components page */
+.Components{
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.Components h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .3;
+}
+
+
+.Components.li{
+    list-style: none;
+    text-align: center;
+}
+
+.wrapper{
+    padding: 0 100px;
+}
+
+.com{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.EPS32CAM,
+.servo,
+.HPE{
+    background-color: #e7dfdd;
+    padding: 20px 20px 20px 20px;
+    border-radius: 60px;
+    width: 390px;
+    height: 600px;
+    box-shadow:  10px 20px 40px #A9A9A9;
+}
+
+
+.img1{
+    width:250px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.img2{
+    width:250px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.img3{
+    width:270px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+.name{
+    font-size:2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px;
+    color: #323335;
+    font-family: 'Piedra', cursive;
+    margin-top: 0em;
+    letter-spacing: 1.5px;
+}
+
+
+.name span {
+    display: inline-block;
+}
+
+span.lineCAM1{
+    margin: 40px;
+    border-top: 2px solid #A9A9A9;
+    line-height: 40px;
+    color:  #828081;
+    font-size:1.2rem;
+    font-family: 'Georgia', serif;
+}
+
+span.lineCAM2{
+    margin: 30px;
+    line-height: 40px;
+    color:  #828081;
+    font-size:1.2rem;
+    font-family: 'Georgia', serif;
+}
+
+span.lineCAM3{
+    margin: 50px;
+    border-bottom: 2px solid #A9A9A9;
+    color:  #828081;
+    font-size:1.2rem;
+    font-family: 'Georgia', serif;
+}
+
+.price{
+    font-size:2.2rem;
+    font-weight: 600;
+    color: #E37222;
+    text-align: center;
+    font-family: 'Piedra', cursive;
+}
+
+sup,
+sub{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Piedra', cursive;
+}
+
+button{
+    text-transform: capitalize;
+    border: 3px solid #E37222;
+    background: #FEDCD2;
+    padding: 8px;
+    border-radius: 30px;
+    color: #E37222;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    overflow: hidden; 
+    display: inline-block;
+    transition: .5s;
+    font-family: 'Piedra', cursive;
+}
+
+
+button:hover{
+    background: linear-gradient(0deg#E37222,#E37222);
+    box-shadow: 0 8px 16px -5px rgba(15, 52,67, .5);
+    color: #ffffff;
+    border:none;
+} 
+
+.EPS32CAM{
+    position: relative;
+    right: -15px;
+}
+
+.HPE{
+    position: relative;
+    left: -15px;
+}
+.servo{
+    z-index: 2;
+}
+
+
+
+
+
+/* contact me  */
+.Contact_Me{
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.Contact_Me h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .3;
+    font-family: 'Metal Mania', cursive;
+}
+
+form input,
+form textarea{
+    display: block;
+    width: 500px;
+    padding: 20px;
+    background-color: #252627;
+    border: 3px solid #707070;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    position: relative;
+    left: 50%;
+    right:50%;
+    transform:translateX(-50%);
+}
+
+form input:last-child{
+    width: 150px;
+    background-color: #ed5565;
+    border: none;
+    cursor: pointer;
+}
+
+footer hr{
+    border: 2px solid #707070;
+    margin-top: 80px;
+}
+
+footer p{
+    text-align: center;
+    columns: #707070;
+    font-size: 1.2rem;
+    padding: 30px 0;
+}
